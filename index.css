@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#html {
+    color: rgb(86, 153, 153);
+    line-height: 1.5;
+}
+
+#div1 {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+#div1::before,
+#div1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+}
+
+@media (max-width:500px) {
+    #div1 {
+        position: relative;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}
